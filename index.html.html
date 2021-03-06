@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment Form</title>
+    <style>
+        #heading{
+            color: rgb(211, 197, 197);
+            background-color: rgb(3, 3, 3);
+            text-align: center;
+            border: 2px double rgb(8, 87, 233);
+            margin-left:2px;
+            margin-right:2px;
+            padding: 5px;
+            border-radius: 20px 0px 20px 0px;
+            
+        }
+        #body{
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body id="body">
+    <form action="kya kroge">
+        <h1 id="heading">payment form</h1>
+        <h2>contact information</h2>
+        <p>Name: *<input type="text" name="name"placeholder="eg:suhaib Arshad" required></p>
+        <fieldset>
+        <legend>Gender*</legend>
+        <p> 
+            Male <input type="radio" name="gender" id="male"required>
+            female <input type="radio" name="gender" id="female"required>
+
+        </p>
+        </fieldset>
+        <p>Address: <textarea name="add" id="add" cols="30" rows="5"></textarea></p>
+        <p>Email: *<input type="email" name="email" id="email"required></p>
+        <p>pincode*<input type="number" name="pincode" id="pincode"required></p>
+        <hr>
+        <h2>payment information*</h2>
+        <p>Card Type:*
+            <select name="card_type" id="Card_type"required>
+                <option value="">--Select Card Type--</option>
+                <option value="visa">Visa</option>
+                <option value="Rupay">Rupay</option>
+                <option value="mastercard">Master card</option>
+            </select>
+        </p>
+        <p>Card No:*
+            <input type="number" name="cardno" id="cardno"required>
+        </p>
+        <p>
+            Expiration Date:*
+            <input type="date" name="exp_date" id="exp_date" required >
+        
+        </p>
+        <p>CVV:*
+            <input type="password" name="cvv" id="cvv"required>
+        </p>
+        <input type="submit" value="pay now">
+        <br>
+        <br>
+        <input type="reset" value="reset form">
+    </form>
+</body>
+</html>
